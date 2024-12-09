@@ -1,0 +1,181 @@
+#custom-button {
+  color: rgb(104, 82, 244);
+  transition: color 1s;
+}
+
+body {
+  background-color: #f8f9fa;
+  ;
+}
+
+#custom-button:hover {
+  color: black;
+}
+
+.link-hover {
+  background-color: none;
+  /* Light background color for the link */
+  color: black;
+  /* Initial text color */
+  text-decoration: none;
+  /* Remove underline */
+  padding: 5px 10px;
+  /* Some padding for the link */
+  border-radius: 5px;
+  /* Rounded corners */
+  transition: 0.5s;
+  /* Smooth transition */
+  font-size: 18px;
+}
+
+
+.link-hover:hover {
+  color: rgb(44, 44, 207);
+  /* Background color changes to blue on hover */
+}
+
+.bit-font {
+  /* font-size: 2em; */
+  font-size: clamp(1.5rem, 5vw, 4rem);
+
+  font-weight: bold;
+}
+
+
+@media (max-width:564px) {
+  .remove-li {
+    visibility: hidden;
+  }
+
+  br {
+    display: none;
+  }
+
+}
+
+
+
+@media (max-width:949px) {
+  .remove-br {
+    display: none;
+  }
+
+}
+
+.bit-font-second {
+  font-size: clamp(1.5rem, 4vw, 3.7rem);
+
+  font-weight: bold;
+}
+
+.custom-image {
+  width: 100%;
+  /* height: 418px; */
+  /* margin: 0 50px; Adds 20px space on both sides */
+  border-radius: 40px;
+  /* Rounds the corners */
+}
+
+/* .feature-box{
+  border: 1px solid rgb(178, 176, 176);
+  background-color: aliceblue;
+}
+.feature-box:hover{
+  border: 1px solid rgb(82, 82, 255);
+  background-color: rgb(168, 192, 212);
+
+
+} */
+
+.feature-box {
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effect */
+  background-color: rgb(255, 255, 255);
+  /* Default background color */
+  border: 1px solid transparent;
+  /* Transparent border by default */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Light shadow by default */
+  transition: 0.5s;
+}
+
+.feature-box:hover {
+  background-color: #ffffff;
+  /* White background on hover */
+  border: 1px solid rgb(104, 82, 244);
+  /* Blue border on hover */
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.25);
+  /* Blue shadow around the box */
+
+}
+
+
+
+
+/* third section */
+.bg-color {
+  background-color: rgb(247, 250, 253);
+}
+
+.custom-button {
+
+  transition: all 0.3s ease;
+  border-radius: 4px;
+
+  border: 1px solid rgb(104, 82, 244);
+}
+
+.custom-button:hover {
+  background-color: rgb(104, 82, 244);
+  color: #ffffff;
+}
+
+@media (max-width:519px) {
+  .custom-button {
+
+    width: 140px;
+    margin: 0%;
+    padding: 0%;
+
+    font-size: 10px;
+    height: 50px;
+  }
+
+
+
+}
+
+
+/* fourth section */
+
+.background-color-round{
+  background-color: rgb(31,44,51);
+
+}
+
+.fourth-section-div{
+  width: 100%;
+}
+
+  .border-right {
+    border-right: 1px solid white;
+  }
+
+
+  .d-flex li {
+    font-size: 2rem; /* Default font size for li items */
+  }
+
+  /* Optional: If you want the <span> or <samp> elements to be smaller than the li content */
+  .d-flex li span, .d-flex li samp {
+    font-size: 1rem; /* Smaller font size for span/samp */
+  }
+
+  /* On smaller screens, each list item takes full width (2 per row) */
+  @media (max-width: 768px) {
+    .d-flex li {
+      width: 48%; /* Each item takes 50% of the row on small screens */
+    }
+  }
