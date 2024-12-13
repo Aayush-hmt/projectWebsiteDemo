@@ -6,88 +6,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+    defer></script>
+
 </head>
 
-<body><!-- Header Section -->
-  <nav class="mt-4 mb-5 navbar navbar-expand-lg navbar-light margin-class">
-    <div class="container">
-      <!-- Left side - Logo -->
-      <a href="#" class="navbar-brand">
-        <img
-          src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digial-download-store-site-logo.svg"
-          alt="Logo">
-      </a>
+<body>
 
-      <!-- Toggle Button for Mobile View -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <!-- Collapsible Menu -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <!-- Centered Links -->
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="link-hover fs-5" href="#">Themes</a>
-          </li>
-          <li class="nav-item">
-            <a class="link-hover fs-5" href="#">Plugins</a>
-          </li>
-          <li class="nav-item">
-            <a class="link-hover fs-5" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="link-hover fs-5" href="#">Contact</a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="link-hover fs-5" href="#">Sign In</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Right Side - $0.00 0 🔒 -->
-      <div class="d-none d-lg-flex align-items-center">
-        <span class="me-4 link-hover">Sign In</span>
-        <div class="d-flex align-items-center">
-          <span class="link-hover text-primary">$0.00</span>
-          <span class="lock-icon link-hover ms-2">&#x1F512;</span>
-        </div>
-      </div>
-    </div>
-  </nav>
 
   <div class="frist-section">
+    <nav class="pt-3 mb-5 navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid mx-5 del-custom-margin">
+
+        <a href="#" class="navbar-brand">
+          <img
+            src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digial-download-store-site-logo.svg"
+            alt="Logo">
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mt-1">
+            <li class="nav-item">
+              <a class="link-hover p-3" href="#" style="font-size: 17px;">Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-hover p-3" href="#" style="font-size: 17px;">Plugins</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-hover p-3" href="#" style="font-size: 17px;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-hover p-3" href="#" style="font-size: 17px;">Contact</a>
+            </li>
+            <!-- Sign In (Mobile Only) -->
+            <li class="nav-item d-lg-none">
+              <a class="link-hover " href="#" style="font-size: 17px;">Sign In</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side (Desktop Only) -->
+        <div class="d-none d-lg-flex align-items-center">
+          <span class="me-4 link-hover">Sign In</span>
+          <div class="d-flex align-items-center">
+            <span class="link-hover text-primary">$0.00</span>
+            <!-- <span class="lock-icon link-hover ms-2">&#x1F512;</span> -->
+            <i class="fa-brands fa-shopify link-hover" style="font-size: 40px;"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="container h-25" style="visibility: hidden;">
       with
     </div>
 
-    <div class="container text-center text-lg-start">
-      <div class="row align-items-center">
+    <div class=" text-center text-lg-start mx-5">
+      <div class="row align-items-center container-fluid ">
         <!-- Left Side: 3 Paragraphs -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-3">
           <div class="mb-4">
             <p class="bit-font">
-              Awesome themes & plugins for WordPress
+              Awesome <br>themes & plugins for WordPress
             </p>
           </div>
           <div class="mb-4">
-            <p class="fs-5 fs-md-3">
+            <p class="fs-4 fs-md-3">
               Easily build a beautiful WordPress website with our premium themes and plugins.
             </p>
           </div>
           <div>
             <p class="my-5">
-              <button class="btn btn-primary fw-bold py-3 px-4">Explore our product</button>&nbsp;
-              <button class="btn fw-bold py-3 px-4" id="custom-button">Why choose us?</button>
+              <button class="btn btn-primary fw-bold py-3 px-4 ">Explore our product</button>&nbsp;
+              <button class=" fw-bold py-3 px-4 effect">Why choose us?</button>
             </p>
           </div>
         </div>
 
         <!-- Right Side: Image -->
-        <div class="col-lg-6 text-center text-lg-end">
+        <div class="col-lg-6 text-center text-lg-end ">
           <img
             src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-hero-image.png"
             alt="Sample Image" id="image1" class="img-fluid">
@@ -95,13 +104,13 @@
       </div>
     </div>
     <br class="remove-br"><br class="remove-br"><br class="remove-br">
-    <div class="container text-center my-5 margin-class">
-      <h2 class="" style=" font-size:clamp(1rem, 2vw, 1rem);">Powering 12,653,898+ websites</h2>
+    <div class="container text-center mt-5 margin-class">
+      <h2 class="" style=" font-size:clamp(1rem, 2vw, 1rem); letter-spacing: 5px;">Powering 12,653,898+ of websites</h2>
     </div>
 
     <!-- Logos Section -->
-    <div class="container my-5 simple-logos-list">
-      <ul class="d-flex justify-content-center align-items-center list-unstyled flex-wrap gap-4 logos">
+    <div class="container-fluid py-5 simple-logos-list">
+      <ul class="d-flex justify-content-center align-items-center list-unstyled flex-wrap gap-5 logos">
         <li>
           <img
             src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-clients-logo-6.svg"
@@ -141,29 +150,36 @@
 
 
   <!-- second section.. -->
-  <div class="container">
-    <div class="display-5 fw-bold text-center">
-      WP Bantage is a complete solutions to amke it easy for anyone to
+  <div class="container-fluid">
+    <div class="display-5 fw-bold text-center px-3 container">
+      WP Bantage is a complete solutions <br> to amke it easy for anyone to
       create awesome WordPress websites.
 
     </div>
     <br>
-    <div class="d-flex justify-content-center my-5">
+    <div class="d-flex justify-content-center my-5 display-block-property-2">
 
-      <div class=" me-5"> <img
+      <div class="me-5"> <img
           src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-wp-logo.png"
           alt="">
         <span>
-          <span>&nbsp;&nbsp;&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+          <i class="fa-solid fa-star" style="color: #fbc04b;"></i><i class="fa-solid fa-star"
+            style="color: #fbc04b;"></i><i class="fa-solid fa-star" style="color: #fbc04b;"></i><i
+            class="fa-solid fa-star" style="color: #fbc04b;"></i><i class="fa-solid fa-star"
+            style="color: #fbc04b;"></i><br>
           <span>4.9 of 5 (4800 reviews)</span>
         </span>
       </div>
-      <div class="ms-5">
+      <div class="border-right px-4 del"></div>
+      <div class="ms-5 ps-5">
         <img
           src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-trustpilot-logo.png"
           alt="">
-        <span><span>&nbsp;&nbsp;&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
-          <span>5 of 5 (1655 reviews)</span></span>
+        <i class="fa-solid fa-star" style="color: #fbc04b;"></i><i class="fa-solid fa-star"
+          style="color: #fbc04b;"></i><i class="fa-solid fa-star" style="color: #fbc04b;"></i><i
+          class="fa-solid fa-star" style="color: #fbc04b;"></i><i class="fa-solid fa-star"
+          style="color: #fbc04b;"></i><br>
+        <span>5 of 5 (1655 reviews)</span></span>
 
 
       </div>
@@ -172,25 +188,31 @@
 
     </div>
     <!-- <br> -->
-    <div class="d-flex justify-content-center mt-5">
-      <img
+    <div class="container-fluid justify-content-center mt-5 image-play">
+      <!-- <img
         src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-intro-video-thumbnail.jpg"
-        alt="Intro Video Thumbnail" class="custom-image">
+        alt="Intro Video Thumbnail" class="custom-image"> -->
+      <!-- <i class="fa-regular fa-circle-play play-video-but" style="color: #c4cddd;"></i> -->
+
+      <video muted poster="Screenshot 2024-12-13 195305.png" class="custom-image">
+
+
+        <source src="movie.mp4" type="video/mp4">
+        <!-- Your browser does not support the video tag. -->
+      </video>
     </div>
 
-    <!-- Custom CSS -->
     <br><br>
-    <!-- <div class="container text-center display-5 fw-bold my-5">Why people loves us</div> -->
 
     <div class="container text-center my-5">
       <h2 class="display-5 fw-bold">Why People Love Us</h2>
     </div>
-    <div class="container-fluid">
-      <!-- First Row -->
-      <div class="row g-4"> <!-- Added g-4 for uniform spacing -->
-        <div class="col-md-4 col-12">
-          <div class="p-5 rounded feature-box"> <!-- Increased padding -->
-            <img src="" alt="Easy setup" class="mb-3" style="max-width: 100px;">
+    <br><br>
+    <div class="">
+      <div class="row g-5 mx-5 ">
+        <div class="col-md-4 col-12 ">
+          <div class="p-4 rounded feature-box h-100">
+            <i class="fa-solid fa-gear pb-3" style="font-size: 30px; color:rgb(104,82,244);"></i>
             <h3>Easy to Setup</h3>
             <p>
               Auctor mauris quis viverra dictum sed in euismod id nunc, nulla ut nunc sed sed accumsan, magnis bibendum
@@ -198,8 +220,9 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-12">
-          <div class="p-5  rounded feature-box"> <!-- Increased padding -->
+        <div class="col-md-4 col-12n ">
+          <div class="p-4  rounded feature-box h-100">
+            <i class="fa-solid fa-layer-group pb-3" style="font-size: 30px; color:rgb(104,82,244);"></i>
             <h3>500+ Pre-built Websites</h3>
             <p>
               Vitae netus nisi, vitae augue duis eu accumsan ut phasellus sit tempor habitasse leo hendrerit amet
@@ -207,8 +230,10 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-12">
-          <div class="p-5  rounded feature-box"> <!-- Increased padding -->
+        <div class="col-md-4 col-12 ">
+          <div class="p-4 rounded feature-box h-100">
+            <i class="fa-solid fa-gear pb-3" style="font-size: 30px; color:rgb(104,82,244);"></i>
+
             <h3>Customize Without Code</h3>
             <p>
               Egestas aliquam, enim at consectetur ullamcorper blandit at nisi, viverra sed nullam nisl, lectus est
@@ -216,152 +241,158 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Second Row -->
-      <div class="container mt-4">
-        <div class="row g-4"> <!-- Added g-4 for spacing -->
-          <div class="col-md-4 col-12">
-            <div class="p-5  rounded feature-box"> <!-- Increased padding -->
-              <h3>Regular Updates</h3>
-              <p>
-                Vulputate viverra dui condimentum ornare aenean id vitae nulla diam, pharetra ac maecenas in et posuere
-                in vivamus vulputate.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-12">
-            <div class="p-5  rounded feature-box"> <!-- Increased padding -->
-              <h3>Super Fast Performance</h3>
-              <p>
-                Sit sit ultrices aliquam aliquam amet, facilisis elit tortor in id tellus tempor, non ullamcorper
-                accumsan,.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-12">
-            <div class="p-5  rounded feature-box"> <!-- Increased padding -->
-              <h3>Outstanding Support</h3>
-              <p>
-                Scelerisque odio id urna, nibh feugiat eu amet, interdum quis eu accumsan, mi mattis feugiat iaculis .
-              </p>
-            </div>
+
+        <div class="col-md-4 col-12">
+          <div class="p-4  rounded feature-box h-100">
+            <i class="fa-solid fa-rotate pb-3" style="font-size: 30px; color:rgb(104,82,244);"></i>
+            <h3>Regular Updates</h3>
+            <p>
+              Vulputate viverra dui condimentum ornare aenean id vitae nulla diam, pharetra ac maecenas in et posuere
+              in vivamus vulputate.
+            </p>
           </div>
         </div>
+        <div class="col-md-4 col-12">
+          <div class="p-4 rounded feature-box h-100">
+            <i class="fa-solid fa-rocket pb-3" style="font-size: 30px; color:rgb(104,82,244);"></i>
+
+            <h3>Super Fast Performance</h3>
+            <p>
+              Sit sit ultrices aliquam aliquam amet, facilisis elit tortor in id tellus tempor, non ullamcorper
+              accumsan,.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-4 rounded feature-box h-100">
+            <i class="fa-solid fa-bullseye pb-3" style="font-size: 30px; color:rgb(104,82,244);"></i>
+
+            <h3>Outstanding Support</h3>
+            <p>
+              Scelerisque odio id urna, nibh feugiat eu amet, interdum quis eu accumsan, mi mattis feugiat iaculis .
+            </p>
+          </div>
+        </div>
+
       </div>
+
     </div>
 
   </div>
-
-
   <br><br><br>
 
-
+  <br>
 
   <!-- /third section -->
-  <div class="container-fluid bg-color mt-5">
+  <div class="mt-5  container-fluid" style="background-color: rgb(247,250,253);">
     <br><br><br><br><br><br>
-    <div class="d-flex justify-content-between container-fluid">
-      <div class="ms-4">
+    <div class="d-flex justify-content-between container-fluid ms-1 display-block-property">
+      <div class="ms-3">
         <h1 class="display-5 fw-bold">Our Themes</h1>
       </div>
-      <div class="me-4">
-        <button class="py-3 px-5 custom-button">View all themes</button>
+      <div class="me-4 me-4">
+        <button class="py-3 px-5 all-button custom-button">View all themes</button>
       </div>
     </div>
     <br><br>
-    <div class="container-fluid py-4">
-      <!-- Row 1 -->
-      <div class="row g-4 flex-wrap">
+    <div class="container-fluid py-4 mx-2">
+      <div class="row g-4 flex-wrap ">
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-themes-product-featured-image-06-380x265.jpg"
-              alt="Photo 1" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Lotus Spa</p>
-            <p>$19.00</p>
+              alt="Photo 1" class="img-fluid  mb-2">
+            <span class="fw-bold d-block">Lotus Spa</span>
+            <span>$19.00</span>
           </div>
         </div>
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-theme-product-featured-image-5-380x265.jpg"
-              alt="Photo 2" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Coffee Shop</p>
-            <p>$39.00</p>
+              alt="Photo 2" class="img-fluid  mb-2">
+
+            <span class="fw-bold d-block">Coffee Shop</span>
+            <span>$39.00</span>
           </div>
         </div>
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-theme-product-featured-image-4-380x265.jpg"
-              alt="Photo 3" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Steak House</p>
-            <p>$29.00</p>
+              alt="Photo 3" class="img-fluid  mb-2">
+
+            <span class="fw-bold d-block">Steak House</span>
+            <span>$29.00</span>
           </div>
         </div>
       </div>
-      <hr> <!-- Horizontal Line after Row 1 -->
+      <hr>
 
-      <!-- Row 2 -->
       <div class="row g-4 flex-wrap">
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-theme-product-featured-image-9-380x265.jpg"
-              alt="Photo 4" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Baby Store</p>
-            <p>$39.00</p>
+              alt="Photo 4" class="img-fluid  mb-2">
+
+            <span class="fw-bold d-block">Baby Store</span>
+            <span>$39.00</span>
           </div>
         </div>
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-theme-product-featured-image-8-380x265.jpg"
-              alt="Photo 5" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Pet Lover</p>
-            <p>$29.00</p>
+              alt="Photo 5" class="img-fluid  mb-2">
+            <span class="fw-bold d-block">Pet Lover</span>
+            <span>$29.00</span>
+
           </div>
         </div>
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-theme-product-featured-image-7-380x265.jpg"
-              alt="Photo 6" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Yoga Studio</p>
-            <p>$19.00</p>
+              alt="Photo 6" class="img-fluid  mb-2">
+
+            <span class="fw-bold d-block">Yoga Studio</span>
+            <span>$19.00</span>
           </div>
         </div>
       </div>
-      <hr> <!-- Horizontal Line after Row 2 -->
-
-      <!-- Row 3 -->
+      <hr>
       <div class="row g-4 flex-wrap">
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-theme-product-featured-image-1-380x265.jpg"
-              alt="Photo 7" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Brand Store</p>
-            <p>$39.00</p>
+              alt="Photo 7" class="img-fluid  mb-2">
+
+            <span class="fw-bold d-block">Brand Store</span>
+            <span>$39.00</span>
+
           </div>
         </div>
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-theme-product-featured-image-2-380x265.jpg"
-              alt="Photo 8" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Outdoor Adventure</p>
-            <p>$29.00</p>
+              alt="Photo 8" class="img-fluid  mb-2">
+
+            <span class="fw-bold d-block">Outdoor Adventure</span>
+            <span>$29.00</span>
           </div>
         </div>
         <div class="col-md-4 col-6">
           <div class="p-3 text-center">
             <img
               src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-theme-product-featured-image-3-380x265.jpg"
-              alt="Photo 9" class="img-fluid rounded mb-2">
-            <p class="fw-bold">Love Nature</p>
-            <p>$29.00</p>
+              alt="Photo 9" class="img-fluid  mb-2">
+
+            <span class="fw-bold d-block">Love Nature</span>
+            <span>$19.00</span>
           </div>
         </div>
       </div>
@@ -371,24 +402,24 @@
       <br><br><br><br>
 
       <div>
-        <div class="d-flex justify-content-between container-fluid mb-5">
+        <div class="d-flex justify-content-between container-fluid mb-5 display-block-property">
           <div class="ms-4">
             <h1 class="display-5 fw-bold">Our plugins</h1>
           </div>
           <div class="me-4">
-            <button class="py-3 px-5 custom-button">View all plugins</button>
+            <button class="py-3 px-5 all-button custom-button">View all plugins</button>
           </div>
 
         </div>
-        <div class="row  flex-wrap mt-5">
+        <div class="row flex-wrap mt-5 mx-4">
           <div class="col-md-4 ">
             <div class=" text-center">
 
               <img
                 src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/edd/2022/04/digital-download-store-plugin-product-featured-image-1-380x265.jpg"
-                alt="">
-              <p class="fw-bold pt-2">Brand Store</p>
-              <p class="fs-5">$39.00</p>
+                alt="" class="w-100">
+              <span class="fw-bold d-block my-1">Gutenberg Blocks</span>
+              <span>$9.00</span>
             </div>
           </div>
           <div class="col-md-4 ">
@@ -396,9 +427,9 @@
 
               <img
                 src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/edd/2022/04/digital-download-store-plugin-product-featured-image-2-380x265.jpg"
-                alt="">
-              <p class="fw-bold pt-2">Outdoor Adventure</p>
-              <p class="fs-5">$29.00</p>
+                alt="" class="w-100">
+              <span class="fw-bold d-block my-1">Ultimate Elementor</span>
+              <span>$14.00</span>
             </div>
           </div>
           <div class="col-md-4 ">
@@ -406,9 +437,9 @@
 
               <img
                 src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/edd/2022/04/digital-download-store-plugin-product-featured-image-3-380x265.jpg"
-                alt="">
-              <p class="fw-bold pt-2">Love Nature</p>
-              <span class="fs-5">$29.00</span>
+                alt="" class="w-100">
+              <span class="fw-bold d-block my-1">Starter Templates 3.0</span>
+              <span>$24.00</span>
             </div>
           </div>
         </div>
@@ -416,6 +447,7 @@
 
 
       </div>
+      <br>
       <br><br><br> <br><br><br>
     </div>
 
@@ -428,45 +460,449 @@
   <!-- fourth section -->
 
 
-  <div class="fourth-section-div">
-    <div class="background-color-round text-light">
-      <div class="d-flex justify-content-center align-items-center m-5">
-        <h1 class="text-center display-4" style="width: 80%;">We bring innovation and creative freedom to the WordPress ecosystem</h1>
+  <div class="fourth-section-div mt-5 main-hov-box">
+    <div class=" text-light fourth-section-part-1 ">
+      <br><br><br><br><br>
+      <div class="d-flex justify-content-center align-items-center m-4">
+        <h1 class="text-center display-5 fw-bold" style="width: 78%;">We bring innovation and creative freedom to the
+          WordPress ecosystem</h1>
       </div>
-      <div class="d-flex justify-content-center align-items-center m-5">
-        <p class="text-center fs-5" style="width: 80%;">Sapien sagittis interdum quisque urna luctus eget morbi 
-          vivamus eget cras scelerisque lectus proin aliquam erat pellentesque 
+      <div class="d-flex justify-content-center align-items-center m-4">
+        <p class="text-center fs-5" style="width: 80%;">Sapien sagittis interdum quisque urna luctus eget morbi
+          vivamus eget cras scelerisque lectus proin aliquam erat pellentesque
           pellentesque sed lectus volutpat semper pellentesque aliquam in metus.</p>
       </div>
-      
-      <div class="d-flex justify-content-center">
-        <ul class="list-unstyled d-flex flex-wrap justify-content-center" style="gap: 10px;">
-          <li class="border-right px-4 py-2 fs-2 text-center">
-            2.4M+<br>
-            <span>LICENSE SOLD</span>
+
+      <div class="d-flex justify-content-center mt-5 ">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+          <li class="border-right mx-4 px-5 text-center">
+            <span class="fs-1 fw-bold" id="counting-div-1">0M+</span>
+            <!-- 2.4 -->
+            <span class="d-block" style="font-size: 13px;">LICENSE SOLD</span>
           </li>
-          <li class="border-right px-4 py-2 fs-2 text-center">
-            12M+<br><span>END USERS</span>
+          <li class="border-right mx-4 px-5 text-center">
+            <span class="fs-1 fw-bold" id="counting-div-2">0M+</span>
+            <!-- 12 -->
+            <span class="d-block fs-0" style="font-size: 13px;">END USERS</span>
           </li>
-          <li class="border-right px-4 py-2 fs-2 text-center">
-            5K+<br>
-            <samp>5 STARS RATING</samp>
+          <li class="border-right mx-4 px-5 text-center">
+            <!-- 5 -->
+            <span class="fw-bold fs-1" id="counting-div-3">0K+</span>
+            <samp class="d-block fs-0" style="font-size: 13px;">5 STARS RATING</samp>
           </li>
-          <li class="px-4 py-2 fs-2 text-center">
-            12<br>
-            <samp>YEARS ON MARKET</samp>
+          <li class="text-center mx-4 px-4 ">
+            <span class="fs-1 fw-bold" id="counting-div-4">0</span>
+            <!-- 12 -->
+            <samp class="d-block fs-0" style="font-size: 13px;">YEARS ON MARKET</samp>
           </li>
         </ul>
       </div>
-      
-     
-      
-      
+      <br><br>
+      <br><br><br> <br><br>
+      <br><br><br> <br><br>
+
     </div>
-    
-</div>
+
+    <div>
+      <div class="text-black d-flex justify-content-center margin-minus container-fluid margin-reduce">
+        <div class="row gap-5 m-5 box-fourth-section d-flex flex-column flex-md-row align-items-center margin-reduce">
+          <div class="col-10 col-md-4">
+            <img
+              src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-image.jpg"
+              alt="boy photo" class="hero-image-1 m-0">
+          </div>
+          <div class="col-12 col-md-7  text-center text-md-start">
+            <div class="paragraph-box-1 ms-3">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-logo.png"
+                alt="mono for para" class="mb-4">
+              <h2 class="fs-2 mb-4">Top WordPress theme because not only does it look great, but it's also optimized for
+                performance.</h2>
+              <p class="w-100 w-md-75 fs-5 mx-auto mx-md-0">
+                Habitant faucibus sollicitudin fames quam scelerisque amet urna non risus diam netus pellentesque ac
+                sit
+                malesuada risus nisi, aliquet rutrum scelerisque cras habitant lorem tortor sit mauris eu ac id enim
+                urna, adipiscing convallis viverra egestas.
+              </p>
+              <h5>Chris Greenfelder</h5>
+              <p>Founder WPBiz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <br><br><br> -->
+    <br><br>
+    <div class="d-flex justify-content-center text-center mt-5">
+      <div>
+        <div class="mb-1 text-warning">
+          <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+        </div>
+        <div>
+          <span class="fs-3 fw-bold">Excellent 4.9 of 5 stars rating</span>
+          <h6>Based on 5,000+ real users reviews</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br>
+    <div class=" mt-5">
+      <!-- <div class=" row gap-4 justify-content-center container-fluid">
+        <div class="col-md-3 col-12 rounded feature-box">
+          <div class="p-4 w-100 h-100">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-6.jpg"
+                alt="">
+
+              <div>
+                <span class="fw-bold">Julia Keys<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 col-12 rounded feature-box">
+          <div class="p-4 ">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-6.jpg"
+                alt="">
+
+              <div>
+                <span class="fw-bold">Julia Keys<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-12 rounded feature-box">
+          <div class=" p-4 ">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-6.jpg"
+                alt="">
+
+              <div>
+                <span class="fw-bold">Julia Keys<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-12 rounded feature-box">
+          <div class="p-4 ">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-6.jpg"
+                alt="">
+
+              <div>
+                <span class="fw-bold">Julia Keys<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-12 rounded feature-box">
+          <div class="p-4 ">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-6.jpg"
+                alt="">
+
+              <div>
+                <span class="fw-bold">Julia Keys<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3  col-12  rounded feature-box">
+          <div class="p-4"><i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-6.jpg"
+                alt="">
+
+              <div>
+                <span class="fw-bold">Julia Keys<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> -->
+      <div class="row g-5 mx-5 ">
+        <div class="col-md-4 col-12 ">
+          <div class="p-4 rounded feature-box h-100">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-6.jpg"
+                alt="">
+
+              <div class="ms-2">
+                <span class="fw-bold">Julia Keys<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12n ">
+          <div class="p-4  rounded feature-box h-100">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-5.jpg"
+                alt="">
+
+              <div class="ms-2">
+                <span class="fw-bold">Francis Fadel<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 ">
+          <div class="p-4 rounded feature-box h-100">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-4.jpg"
+                alt="">
+
+              <div class="ms-2">
+                <span class="fw-bold">	
+                  Lawrence Mills<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-12">
+          <div class="p-4  rounded feature-box h-100">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-3.jpg"
+                alt="">
+
+              <div class="ms-2">
+                <span class="fw-bold">	
+                  Sophia Hegmann<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-4 rounded feature-box h-100">
+            <i class="fa-solid fa-quote-left fs-5 pb-2" style="color: #6852f4;"></i>
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-2.jpg"
+                alt="">
+
+              <div class="ms-2">
+                <span class="fw-bold">	
+                  Tommie Lakin<div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 ">
+          <div class="p-4 rounded feature-box h-100">
+            <p>Adipiscing vestibulum, nec augue orci est est dui nulla imperdiet diam habitant consequat hac.</p>
+            <div class="flex-property">
+              <img
+                src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-testimonial-avatar-1.jpg"
+                alt="">
+
+              <div class="ms-2">
+                <span class="fw-bold">	
+                  Jeanette Koss
+                  <div style="font-size: 14px; font-weight: normal;"> Designer</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <br><br><br><br><br>
+
+
+    <!-- fifth section -->
+    <!-- color lagaya h isli fluid -->
+
+    <div class=" five-section mt-5 container-fluid">
+      <br><br><br>
+      <div class="container-fluid">
+        <h1 class="my-5 display-4 fw-bold w-50 ms-5">Free WordPress resources & support </h1>
+
+
+      </div>
+      <div class="row  gap-5  justify-content-center ">
+        <div class="col-md-3 col-12 box-size-2 p-5">
+          <i class="fa-solid fa-book fs-2 pb-3" style="color: #6852f4;"></i>
+          <h3>User-friendly focumenarion</h3>
+          <p>Eget id dis volutpat tellus id cursus nisi vitae vitae pulvinar.</p>
+          <p class="link-create-1 fw-bold">Documentation -></p>
+        </div>
+        <div class="col-md-3 col-12 box-size-2 p-5">
+          <i class="fa-solid fa-newspaper fs-2 mb-3" style="color: #6852f4;"></i>
+          <h3>The latest tutorials & product news</h3>
+          <p>Gravida neque aliquam montes, eu congue purus senectus risus.</p>
+          <p class="link-create-1 fw-bold"> Visit our blog -></p>
+        </div>
+        <div class="col-md-3 col-12 box-size-2  p-5">
+          <i class="fa-solid fa-bullhorn fs-2 mb-3" style="color: #6852f4;"></i>
+          <h3>See what’s coming next at WP Vantage</h3>
+          <p>Convallis sit etiam ultrices odio at in ut adipiscing ipsum.</p>
+          <p class="link-create-1 fw-bold">Update log -></p>
+        </div>
+
+      </div>
+      <br><br><br>
+      <br><br>
+
+    </div>
 
   </div>
+
+
+  <!-- six section -->
+
+  <div class=" six-section ">
+    <div class="color-layer text-white ">
+      <br><br><br>
+      <div class="text-center py-5">
+        <h1 class="display-3 fw-bold">Start building awesome websites</h1>
+        <p class="fs-4">Join over 12,653,898 of customers that already building amazing wesites</p>
+        <button class="rounded w-25 mt-4 mb-5 button-footer all-button " style="height: 50px;">Explore our
+          product</button>
+      </div>
+
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <!-- seven section -->
+
+  <div class="container border-bottom pb-5 container-fluid">
+    <div class="row  mt-5">
+      <div class="col-md-3 col-12 text-center my-4"><span class="fw-bold mb-4 fs-3">Company
+        </span>
+        <br><br>
+
+        <div>Themes
+        </div>
+        <div>Plugins</div>
+        <div>About</div>
+        <div>Contact</div>
+      </div>
+      <div class="col-md-3 col-12 text-center my-4">
+        <span class="fw-bold mb-4 fs-3">Products
+        </span>
+        <br><br>
+        <div>Themes <br>
+
+        </div>
+        <div>Plugins</div>
+        <div>About</div>
+        <div>Contact</div>
+      </div>
+      <div class="col-md-3 col-12 text-center my-4"> <span class="fw-bold mb-4 fs-3">Themes
+        </span>
+        <br><br>
+        <div> Terms
+        </div>
+        <div>Plugins</div>
+        <div>About</div>
+        <div>Contact</div>
+      </div>
+      <div class="col-md-3 col-20 text-center my-4"> <span class="fw-bold mb-4 fs-3">Themes
+        </span>
+        <br><br>
+        <div> Supports
+
+
+        </div>
+        <div>Plugins</div>
+        <div>About</div>
+        <div>Contact</div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid">
+    <nav class="mt-4 mb-5 navbar navbar-expand-lg navbar-light">
+      <div class="container justify-content-center text-center">
+        <!-- Logo Section -->
+        <a href="#" class="navbar-brand mx-auto">
+          <img
+            src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digial-download-store-site-logo.svg"
+            alt="Logo">
+        </a>
+        <!-- Navigation Text -->
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <p class="m-auto " style="font-size: 12px;">© 2024 Digital Download Store. Powered by Digital Download Store.
+          </p>
+        </div>
+        <!-- Payment Logo -->
+        <div class="d-none d-lg-flex align-items-center justify-content-center">
+          <img
+            src="https://websitedemos.net/digital-download-store-02/wp-content/uploads/sites/1068/2022/04/digital-download-store-payment-logo.png"
+            alt="">
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
 </body>
+
 
 </html>
